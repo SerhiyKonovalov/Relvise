@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  color: #252B42;
+  color: #252b42;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
@@ -305,14 +305,14 @@ body {
   font-weight: 700;
   line-height: 200%;
   letter-spacing: 0.2px;
-  color: #FFFFFF;
-  background: #FF7B47;
+  color: #ffffff;
+  background: #ff7b47;
   border-radius: 37px;
   padding: 0px 36px;
   transition: all 0.3s ease 0s;
 }
 .main-block__button-get:hover {
-  color: #FF7B47;
+  color: #ff7b47;
   background: #fff;
 }
 .main-block__button-learn {
@@ -324,15 +324,15 @@ body {
   font-weight: 700;
   line-height: 200%;
   letter-spacing: 0.2px;
-  color: #0D5C63;
-  border: 1px solid #0D5C63;
+  color: #0d5c63;
+  border: 2px solid #0d5c63;
   border-radius: 37px;
   padding: 0px 36px;
   transition: all 0.3s ease 0s;
 }
 .main-block__button-learn:hover {
-  color: #FFFFFF;
-  background: #0D5C63;
+  color: #ffffff;
+  background: #0d5c63;
 }
 .main-block__bg-image {
   position: absolute;
@@ -355,37 +355,40 @@ body {
 
 /*----------------------SERVICES----------------------*/
 .content {
-  background: #FAFAFA;
+  background: #fafafa;
 }
 .services {
   margin-top: -110px;
   position: relative;
   z-index: 2;
 }
-.services__cards {
-  display: flex;
+@media (min-width: 768px) {
+  .services__cards {
+    display: flex;
+  }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .services__cards {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 .services__card {
-  min-width: 280px;
   flex: 0 1 33.333%;
   background: #fff;
   padding: 35px 40px;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   transition: all 0.3s ease 0s;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .services__card {
+    min-width: 280px;
     display: flex;
     flex: 0 1 50%;
     justify-content: center;
     align-items: center;
     padding: 30px 25px;
+    text-align: center;
   }
 }
 @media (max-width: 479px) {
@@ -396,7 +399,7 @@ body {
 .services__card:not(:last-child) {
   margin-right: 30px;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .services__card:not(:last-child) {
     margin-right: 0.1px;
     margin-bottom: 30px;
@@ -408,9 +411,11 @@ body {
   }
 }
 .services__card:hover {
-  background: #0D5C63;
+  background: #0d5c63;
 }
-.services__card:hover .services__icon, .services__card:hover .services__title, .services__card:hover .services__text {
+.services__card:hover .services__icon,
+.services__card:hover .services__title,
+.services__card:hover .services__text {
   color: #fff;
 }
 .services__body {
@@ -421,12 +426,12 @@ body {
 }
 .services__icon {
   font-size: 48px;
-  color: #0D5C63;
+  color: #0d5c63;
   transition: all 0.3s ease 0s;
 }
 @media (max-width: 992px) {
-  .services {
-    text-align: center;
+  .services__icon {
+    font-size: 40px;
   }
 }
 .services__title {
@@ -435,6 +440,11 @@ body {
   line-height: 133.3333333333%;
   letter-spacing: 0.1px;
   transition: all 0.3s ease 0s;
+}
+@media (max-width: 992px) {
+  .services__title {
+    font-size: 20px;
+  }
 }
 .services__text {
   font-size: 14px;
@@ -692,8 +702,8 @@ body {
 .whoweare__video {
   flex: 0 0 57.12%;
   position: relative;
-  padding: 0 0 42.29% 0;
-  margin-right: 115px;
+  padding: 0 0 40% 0;
+  margin-right: 90px;
 }
 @media (max-width: 1200px) {
   .whoweare__video {
@@ -859,7 +869,7 @@ body {
   align-items: center;
   margin: 0 30px;
   padding: 30px 50px;
-  background: #17213C;
+  background: #17213c;
   border-radius: 2px;
   position: relative;
   z-index: 2;
@@ -888,7 +898,7 @@ body {
   font-size: 24px;
   line-height: 133.3333333333%;
   letter-spacing: 0.1px;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 266px;
 }
 @media (max-width: 760px) {
@@ -916,8 +926,8 @@ body {
 .subscribe__input {
   flex: 1 1 auto;
   min-height: 58px;
-  background: #F9F9F9;
-  border: 1px solid #E6E6E6;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
   border-right: none;
   border-radius: 5px 0 0 5px;
   padding: 0 20px;
@@ -939,9 +949,9 @@ body {
   line-height: 200%;
   text-align: center;
   letter-spacing: 0.2px;
-  background: #FF7B47;
+  background: #ff7b47;
   color: #fff;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 0px 5px 5px 0px;
   padding: 0 22px;
   transition: all 0.3s ease 0s;
@@ -957,7 +967,7 @@ body {
   left: 0;
   width: 100%;
   height: 77px;
-  background: #252B42;
+  background: #252b42;
 }
 @media (max-width: 760px) {
   .subscribe::before {
@@ -968,7 +978,7 @@ body {
 /*--------------------Get In Touch--------------------*/
 .getintouch {
   padding: 80px 0 150px 0;
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 @media (max-width: 1200px) {
   .getintouch {
@@ -1033,7 +1043,7 @@ body {
   }
 }
 .getintouch__card:hover {
-  background: #252B42;
+  background: #252b42;
   transform: scale(1, 1.1);
 }
 @media (max-width: 992px) {
@@ -1041,7 +1051,9 @@ body {
     transform: scale(1, 1);
   }
 }
-.getintouch__card:hover .card-getintouch__icon, .getintouch__card:hover .card-getintouch__emails, .getintouch__card:hover .card-getintouch__title {
+.getintouch__card:hover .card-getintouch__icon,
+.getintouch__card:hover .card-getintouch__emails,
+.getintouch__card:hover .card-getintouch__title {
   color: #fff;
 }
 .getintouch__card:hover .card-getintouch__button {
@@ -1068,7 +1080,7 @@ body {
 
 .card-getintouch__icon {
   font-size: 72px;
-  color: #0D5C63;
+  color: #0d5c63;
   transition: all 0.3s ease 0s;
 }
 .card-getintouch__emails {
@@ -1094,8 +1106,8 @@ body {
   transition: all 0.3s ease 0s;
 }
 .card-getintouch__button {
-  color: #FF7B47;
-  border: 1px solid #FF7B47;
+  color: #ff7b47;
+  border: 1px solid #ff7b47;
   border-radius: 5px;
   font-weight: 600;
   line-height: 171.4285714286%;
@@ -1106,16 +1118,16 @@ body {
 }
 .card-getintouch__button:hover {
   color: #fff;
-  background: #FF7B47;
+  background: #ff7b47;
 }
 .card-getintouch .card-getintouch__button:hover {
-  border: 1px solid #FF7B47;
+  border: 1px solid #ff7b47;
 }
 
 /*----------------------CONTACK----------------------*/
 .contact {
   padding: 40px 0;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 .contact__body {
   display: flex;
@@ -1159,7 +1171,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  background: #FF7B47;
+  background: #ff7b47;
   border-radius: 5px;
   font-weight: 700;
   line-height: 200%;
